@@ -1,0 +1,8 @@
+curl -X POST -H 'Content-Type: application/json' http://165.227.231.233:5001/skills -d '{"job_titles":{
+    "Business Intelligence Analyst": {"startDate":"2016-06-06","endDate":"2017-06-06"},
+    "IT Manager": {"startDate":"2017-06-07","endDate":"2018-10-16"},
+    "Data Scientist": {"startDate":"2020-03-03","endDate":"2020-05-20"}
+    },
+    "language":{"language":"en"
+    }
+}'

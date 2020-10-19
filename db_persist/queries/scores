@@ -1,0 +1,10 @@
+CREATE TABLE Scores (
+scoreID int NOT NULL AUTO_INCREMENT,
+job_title VARCHAR(255),
+top_skills VARCHAR(255),
+scores DOUBLE,
+num_appear BIGINT,
+number_of_selection BIGINT,
+selection_score DOUBLE AS (number_of_selection/num_appear),
+PRIMARY KEY (scoreID)
+);

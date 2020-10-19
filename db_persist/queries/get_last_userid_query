@@ -1,0 +1,4 @@
+SELECT UserID
+FROM JobRequest
+ORDER BY UserID DESC
+LIMIT 1;

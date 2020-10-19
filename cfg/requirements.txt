@@ -1,0 +1,11 @@
+pandas
+flask
+flask_restful
+xlrd
+spacy
+Unidecode
+Flask-WTF
+mysql-connector-python
+fuzzywuzzy
+flask-login
+numpy

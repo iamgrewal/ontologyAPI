@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+      .testfont {
+        font-family: 'Dancing Script', cursive;
+        font-size: 50px;
+        text-align: center;
+
+      }
+      .clickhere{
+        font-family: 'Bree Serif', serif;
+        font-size: 15px;
+        text-align: center;
+
+      }
+
+      .neobrain{
+        font-family: 'Bree Serif', serif;
+        font-size: 10px;
+        text-align: center;
+
+      }
+      img.two {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 15%;
+        width: 15%;
+      }
+</style>
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="{{ url_for('static', filename='images/icons/favicon.png') }}">
+
+<body style="background-color:#ffffff;">
+
+<img src="{{url_for('static', filename='images/thank you.png')}}" class="center"/>
+
+
+<p class="testfont">For your feedback !</p>
+
+<img src="{{url_for('static', filename='images/neobrain.png')}}" class="two">
+<p class="clickhere"> <a href={{url_for('test')}}>Click Here</a> to submit another profile.</p>
+<br>
+<p class="neobrain"> To any further information please acess the <a href="https://www.neobrain.io/">Neobrain Website.</a></p>
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>JSON Example</title>
+    </head>
+    <body>
+        <pre>
+            <code>
+                <b>Accepts any job title :</b>
+            </code>
+        </pre>
+        <pre>
+            <code>
+                
+                curl -X POST -H 'Content-Type: application/json' http://165.227.231.233:5001/skills -d '{"job_titles":{
+                    "Business Intelligence Analyst": {"startDate":"2016-06-06","endDate":"2017-06-06"},
+                    "IT Manager": {"startDate":"2017-06-07","endDate":"2018-10-16"},
+                    "Data Scientist": {"startDate":"2020-03-03","endDate":"2020-05-20"}
+                    },
+                    "language":{"language":"en"
+                    }
+                }'
+            </code>
+        </pre>
+        <pre>
+            <code>
+                <b>Accepts job titles from the list :</b>
+            </code>
+        </pre>
+        <br>
+        <pre>
+            <code>
+                curl -X POST -H 'Content-Type: application/json' http://165.227.231.233:5001/skills_list -d '{"job_titles":{
+                    "Clinicien en toxicomanie": {"startDate":"2016-06-06","endDate":"2017-06-06"},
+                    "Cantonnier": {"startDate":"2017-06-07","endDate":"2018-10-16"},
+                    "Instructeur de facturation et de codage medical": {"startDate":"2020-03-03","endDate":"2020-05-20"}
+                    },
+                    "language":{"language":"fr"
+                    }
+                }'
+            </code>
+        </pre>
+    </body>
+</html>

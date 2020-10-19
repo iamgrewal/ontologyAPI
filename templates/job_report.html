@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Recommended Skills</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="{{ url_for('static', filename='images/icons/favicon.ico') }}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css"
+		href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css"
+		href="{{ url_for('static', filename='fonts/font-awesome-4.7.0/css/font-awesome.min.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/animate/animate.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/select2/select2.min.css') }}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css"
+		href="{{ url_for('static', filename='vendor/perfect-scrollbar/perfect-scrollbar.css') }}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/util.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+	<!--===============================================================================================-->
+</head>
+
+<body>
+	<div>
+		<div class="container-table100">
+			<center><h1 style="color:white;font-family:courier;"> Jobs Report</h1></center>
+			<br><br><br>
+			<div class="wrap-table100">
+				<div class="table100">
+					<table>
+						<thead>
+							<tr class="table100-head">
+								<th class="column7">JobID</th>
+								<th class="column7">UserID</th>
+								<th class="column1">JobTitle</th>
+								<th class="column1">MatchedTitle</th>
+								<th class="column2">StartDate</th>
+								<th class="column2">EndDate</th>
+								<th class="column2">ReqDateHour</th>
+								<th class="column7">Language</th>
+							</tr>
+						</thead>
+						<tbody>
+							{% for row in data %}
+							<tr>
+								<td class="column7">{{row.0}}</td>
+								<td class="column7">{{row.1}}</td>
+								<td class="column1">{{row.2}}</td>
+								<td class="column1">{{row.3}}</td>
+								<td class="column2">{{row.4}}</td>
+								<td class="column2">{{row.5}}</td>
+								<td class="column2">{{row.6}}</td>
+								<td class="column7">{{row.7}}</td>
+							</tr>
+							{% endfor %}
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
